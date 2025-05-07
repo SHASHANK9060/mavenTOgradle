@@ -2,12 +2,12 @@ pipeline {
     agent any  // Use any available agent
 
     tools {
-        maven 'Maven'  // Ensure this matches the name configured in Jenkins
+        maven 'Maven_3.8.7'  // Ensure this matches the name configured in Jenkins Maven_3.8.7
     }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/SNEHARAJU21/MAVEN_TO_GRADLE'
+                git branch: 'master', url: 'https://github.com/SHASHANK9060/mavenTOgradle.git'
             }
         }
 
